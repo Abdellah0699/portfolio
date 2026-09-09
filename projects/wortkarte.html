@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WortKarte — Abdellah</title>
+<meta name="description" content="WortKarte is a language-learning web application that helps users practice and build their German vocabulary, built by Abdellah.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Public+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="pre-load">
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <div class="nav-brand"><a href="../index.html" class="nav-logo">Abdellah</a></div>
+    <nav class="nav-pill">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <div class="nav-aside"><a href="../index.html#contact">Let's talk</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenuMobile">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-menu-mobile" id="navMenuMobile">
+    <a href="../index.html#work">Work</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="project-hero">
+    <div class="wrap">
+      <a href="../index.html#work" class="project-hero-back" data-transition>← Back to work</a>
+      <span class="project-hero-index">03 / 03</span>
+      <h1 class="project-hero-title">WortKarte</h1>
+      <p class="project-hero-desc">Language-learning web application.</p>
+
+      <div class="project-hero-media">
+        <div class="browser-frame">
+          <div class="browser-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="browser-url">wortkarte-official.netlify.app</span>
+          </div>
+          <div class="browser-viewport">
+            <iframe src="https://wortkarte-official.netlify.app/" title="Live preview of WortKarte" loading="lazy" tabindex="-1"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="case-body wrap">
+
+    <section class="case-section">
+      <span class="case-section-label">Overview</span>
+      <div class="case-section-body">
+        <p>WortKarte is a language-learning web application built to help users practice and build German vocabulary, with a terminal-inspired interface instead of a typical app layout.</p>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <span class="case-section-label">The Idea</span>
+      <div class="case-section-body">
+        <p>Most vocabulary apps bury the actual practice under accounts, streak pressure and ads. WortKarte strips that away: pick a level from A1 to C2 and start practicing straight away, no sign-up required.</p>
+        <p>Instead of a typical app layout, it borrows the look of a command line — a small nod to the fact that it was built by a developer, for anyone who wants a fast, no-friction way to practice.</p>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <span class="case-section-label">What I Built</span>
+      <div class="case-section-body">
+        <ul>
+          <li>Level-based vocabulary practice covering CEFR levels A1 through C2</li>
+          <li>A progress counter per level, so it's clear how far through a level a user is</li>
+          <li>Progress saved locally on the user's device via the browser, with no accounts, ads or tracking</li>
+          <li>A terminal-inspired interface, down to the command-style prompt text</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <span class="case-section-label">Design</span>
+      <div class="case-section-body">
+        <p>The whole interface leans into a CLI aesthetic — monospace type, a blinking cursor, and copy phrased like commands rather than app menus. It's a deliberate departure from the usual language-app look, aimed at making practice feel quick and a little less precious.</p>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <span class="case-section-label">Technology</span>
+      <div class="case-section-body">
+        <p>Built with plain HTML, CSS and JavaScript, with no framework and no backend — progress is kept entirely in the browser.</p>
+        <ul class="case-tech-list">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <span class="case-section-label">Challenges</span>
+      <div class="case-section-body">
+        <p>Keeping everything client-side meant paying real attention to how progress gets stored and restored reliably in the browser, without a database to fall back on. Structuring vocabulary content by CEFR level in plain JavaScript, in a way that stayed easy to extend, took a few passes to get right.</p>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <span class="case-section-label">What I Learned</span>
+      <div class="case-section-body">
+        <p>WortKarte was a chance to design something with a strong, specific visual identity instead of a generic layout, and to think through level-based content and local persistence without reaching for a backend.</p>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <span class="case-section-label">Links</span>
+      <div class="case-section-body">
+        <div class="case-links">
+          <a href="https://wortkarte-official.netlify.app/" class="btn btn-primary" target="_blank" rel="noopener">Visit WortKarte ↗</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <a href="ecommerce.html" class="case-next" data-transition>
+    <div class="wrap">
+      <p class="case-next-label">Next project</p>
+      <p class="case-next-title">E-Commerce Demo →</p>
+    </div>
+  </a>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="footer-name">Abdellah</span>
+      <span class="footer-role">Web Developer</span>
+    </div>
+    <nav class="footer-links">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <nav class="footer-social">
+      <a href="https://www.instagram.com/xbdou__/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://github.com/Abdellah0699" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:Abdounamane88@gmail.com">Email</a>
+    </nav>
+    <span class="footer-copy">© 2026 Abdellah</span>
+  </div>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

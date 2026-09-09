@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Commerce Demo — Abdellah</title>
+<meta name="description" content="A front-end e-commerce demo storefront built by Abdellah as an editorial fashion drop site.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Public+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="pre-load">
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <div class="nav-brand"><a href="../index.html" class="nav-logo">Abdellah</a></div>
+    <nav class="nav-pill">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <div class="nav-aside"><a href="../index.html#contact">Let's talk</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenuMobile">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-menu-mobile" id="navMenuMobile">
+    <a href="../index.html#work">Work</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="project-hero">
+    <div class="wrap">
+      <a href="../index.html#work" class="project-hero-back" data-transition>← Back to work</a>
+      <span class="project-hero-index">01 / 03</span>
+      <h1 class="project-hero-title">E-Commerce Demo</h1>
+      <p class="project-hero-desc">An editorial fashion storefront, front end only.</p>
+
+      <div class="project-hero-media">
+        <div class="browser-frame">
+          <div class="browser-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="browser-url">e-commerce-demoo.netlify.app</span>
+          </div>
+          <div class="browser-viewport">
+            <iframe src="https://e-commerce-demoo.netlify.app/" title="Live preview of the E-Commerce Demo" loading="lazy" tabindex="-1"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="case-body wrap">
+
+    <section class="case-section">
+      <span class="case-section-label">Overview</span>
+      <div class="case-section-body">
+        <p>A demo e-commerce storefront built around a moody, night-shot fashion brand — product browsing, a cart, and a checkout flow, entirely on the front end with no real backend or payment processing behind it.</p>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <span class="case-section-label">The Idea</span>
+      <div class="case-section-body">
+        <p>I wanted to practice the interaction patterns that make an e-commerce site actually feel like one — product grids, cart state, category browsing — without needing a real store behind it. Building a fictional brand gave me the freedom to focus entirely on the front end.</p>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <span class="case-section-label">What I Built</span>
+      <div class="case-section-body">
+        <ul>
+          <li>A horizontal, drag-to-explore collections carousel</li>
+          <li>Product grids with add-to-cart interactions</li>
+          <li>A cart drawer that tracks a running subtotal</li>
+          <li>Category browsing (New Arrivals, Tops, Bottoms, Outerwear, Accessories)</li>
+          <li>A search overlay</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <span class="case-section-label">Design</span>
+      <div class="case-section-body">
+        <p>The art direction leans into an after-dark, editorial fashion look — large type for seasonal drops, dark imagery, and a horizontal-scroll collections section that feels closer to a lookbook than a typical storefront grid.</p>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <span class="case-section-label">Technology</span>
+      <div class="case-section-body">
+        <p>Built entirely with plain HTML, CSS and JavaScript, deployed on Netlify. Cart state and UI interactions are handled client-side — there's no backend or real payment processing behind the checkout.</p>
+        <ul class="case-tech-list"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <span class="case-section-label">Challenges</span>
+      <div class="case-section-body">
+        <p>Managing cart state — adding items, updating quantities, keeping the subtotal correct — without a framework meant being deliberate about how state and the DOM stayed in sync. Getting the drag-based collections carousel to feel smooth, rather than janky, took a few iterations, as did keeping product image grids performant on lower-end connections.</p>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <span class="case-section-label">What I Learned</span>
+      <div class="case-section-body">
+        <p>This project pushed me to structure cart logic and UI state cleanly in vanilla JavaScript, build a drag interaction from scratch, and commit to a distinct art direction instead of a default e-commerce look.</p>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <span class="case-section-label">Links</span>
+      <div class="case-section-body">
+        <div class="case-links">
+          <a href="https://e-commerce-demoo.netlify.app/" class="btn btn-primary" target="_blank" rel="noopener">Visit Website ↗</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <a href="petcare.html" class="case-next" data-transition>
+    <div class="wrap">
+      <p class="case-next-label">Next project</p>
+      <p class="case-next-title">PetCare →</p>
+    </div>
+  </a>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="footer-name">Abdellah</span>
+      <span class="footer-role">Web Developer</span>
+    </div>
+    <nav class="footer-links">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <nav class="footer-social">
+      <a href="https://www.instagram.com/xbdou__/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://github.com/Abdellah0699" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:Abdounamane88@gmail.com">Email</a>
+    </nav>
+    <span class="footer-copy">© 2026 Abdellah</span>
+  </div>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
