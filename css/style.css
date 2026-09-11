@@ -1,6 +1,6 @@
 /* =========================================================
    Abdellah — Portfolio v3 (dark)
-   Design tokens                hero
+   Design tokens                
    ========================================================= */
 :root {
   --color-bg: #0C0B0A;
@@ -184,8 +184,21 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
 /* =========================================================
    Hero    
    ========================================================= */
-.hero { position: relative; padding: clamp(48px, 8vw, 100px) 0 96px; overflow: hidden; }
-.hero-inner { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 40px; align-items: center; }
+.hero { position: relative; padding: clamp(48px, 8vw, 100px) 0 96px; overflow: hidden; isolation: isolate; }
+.hero-inner { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 40px; align-items: center; position: relative; z-index: 1; }
+
+/* 21st.dev-inspired pixel star canvas — kept subtle so it supports the hero instead of competing with the copy. */
+.pixel-stars {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.82;
+}
+
 
 .status-chip {
   display: inline-flex; align-items: center; gap: 8px;
